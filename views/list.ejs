@@ -5,6 +5,10 @@
     <title>List</title>
   </head>
   <body>
+    <h1><%=date%></h1>
+    <%for(let i = 0; i < items.length; i++){%>
+    <p><%=items[i]%></p>
+    <%}%>
     <form action="/" method="post">
       <input type="text" name="item" placeholder="New todo item" />
       <button type="submit" name="button">+</button>
